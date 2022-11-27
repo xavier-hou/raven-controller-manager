@@ -3,7 +3,7 @@ name: Sync Charts
 on:
   push:
     branches:
-      - test
+      - main
     paths:
       - 'charts/**'
 
