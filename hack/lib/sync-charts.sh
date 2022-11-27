@@ -15,12 +15,12 @@
 
 set -e
 
-#if [[ -n "$SSH_DEPLOY_KEY" ]]
-#then
-#  mkdir -p ~/.ssh
-#  echo "$SSH_DEPLOY_KEY" > ~/.ssh/id_rsa
-#  chmod 600 ~/.ssh/id_rsa
-#fi
+if [[ -n "$SSH_DEPLOY_KEY" ]]
+then
+  mkdir -p ~/.ssh
+  echo "$SSH_DEPLOY_KEY" > ~/.ssh/id_rsa
+  chmod 600 ~/.ssh/id_rsa
+fi
 
 echo "git clone"
 cd ..
